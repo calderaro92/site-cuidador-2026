@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=yes">
+  <title>Carlos Calderaro — Cuidador Geriátrico</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <img src="img/Ajuda com Código.png" alt="Carlos Calderaro">
+        <div>
+          <h1>Cuidador Carlos Calderaro</h1>
+          <p>Cuidador Geriátrico • Acompanhante Hospitalar</p>
+        </div>
+      </div>
+
+      <nav aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato" class="btn btn-accent">Contato</a>
+      </nav>
+
+      <div class="hero-cta">
+        <a class="btn btn-whatsapp" href="https://wa.me/5511962075048">WhatsApp (11) 96207-5048</a>
+        <a class="btn btn-accent" href="mailto:calderaro1992@gmail.com">E-mail</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="sobre" class="card" aria-labelledby="sobre-title">
+      <h2 id="sobre-title">Sobre mim</h2>
+      <p>Profissional com 15 anos em cuidados geriátricos, especializado em Alzheimer, Parkinson, demência e cuidados paliativos. Atendimento humanizado, discreto e com foco na qualidade de vida.</p>
+    </section>
+
+    <div class="grid">
+      <div>
+        <section id="servicos" class="card" aria-labelledby="servicos-title">
+          <h2 id="servicos-title">Serviços</h2>
+          <p class="subtitulo">Ofereço atendimento personalizado e humanizado, com foco na segurança, conforto e qualidade de vida do paciente.</p>
+
+          <div class="services-grid">
+            <!-- Acompanhamento Hospitalar -->
+            <article class="service-card" data-service="hospitalar">
+              <div class="service-head">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="18" rx="2" stroke="#0b74d1" stroke-width="1.4" fill="#eaf4ff"/>
+                  <path d="M7 10h10M7 14h10" stroke="#0b74d1" stroke-width="1.4" stroke-linecap="round"/>
+                </svg>
+                <div>
+                  <strong>Acompanhamento Hospitalar</strong><br>
+                  <small>Monitoramento, medicação e suporte emocional</small>
+                </div>
+              </div>
+              <p>Acompanhamento contínuo durante internações, com comunicação direta com a equipe médica.</p>
+              <div class="service-actions">
+                <button class="btn btn-primary" data-open="hospitalar">Ver detalhes</button>
+                <a class="btn btn-whatsapp" href="https://wa.me/5511962075048">Agendar</a>
+              </div>
+            </article>
+
+            <!-- Cuidados Domiciliares -->
+            <article class="service-card" data-service="domiciliar">
+              <div class="service-head">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M3 11l9-7 9 7v7a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2v-7z" stroke="#0b74d1" stroke-width="1.4" fill="#eaf4ff"/>
+                </svg>
+                <div>
+                  <strong>Cuidados Domiciliares</strong><br>
+                  <small>Higiene, alimentação e mobilização</small>
+                </div>
+              </div>
+              <p>Atendimento em casa com todo o conforto e segurança para o idoso.</p>
+              <div class="service-actions">
+                <button class="btn btn-primary" data-open="domiciliar">Ver detalhes</button>
+                <a class="btn btn-accent" href="mailto:calderaro1992@gmail.com">E-mail</a>
+              </div>
+            </article>
+
+            <!-- Cuidados Paliativos -->
+            <article class="service-card" data-service="paliativos">
+              <div class="service-head">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="12" cy="8" r="3" stroke="#0b74d1" stroke-width="1.4" fill="#eaf4ff"/>
+                  <path d="M6 20c1.5-4 4.5-6 6-6s4.5 2 6 6" stroke="#0b74d1" stroke-width="1.4" fill="none"/>
+                </svg>
+                <div>
+                  <strong>Cuidados Paliativos</strong><br>
+                  <small>Conforto e controle de sintomas</small>
+                </div>
+              </div>
+              <p>Atuação focada no bem-estar e qualidade de vida do paciente.</p>
+              <div class="service-actions">
+                <button class="btn btn-primary" data-open="paliativos">Ver detalhes</button>
+                <a class="btn btn-accent" href="#contato">Fale comigo</a>
+              </div>
+            </article>
+
+            <!-- Estimulação Cognitiva -->
+            <article class="service-card" data-service="cognitiva">
+              <div class="service-head">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="3" stroke="#0b74d1" stroke-width="1.4" fill="#eaf4ff"/>
+                  <path d="M8 12h8M8 16h8M8 8h8" stroke="#0b74d1" stroke-width="1.2" stroke-linecap="round"/>
+                </svg>
+                <div>
+                  <strong>Estimulação Cognitiva</strong><br>
+                  <small>Memória, atenção e atividades</small>
+                </div>
+              </div>
+              <p>Exercícios personalizados para manter a capacidade cognitiva ativa.</p>
+              <div class="service-actions">
+                <button class="btn btn-primary" data-open="cognitiva">Ver detalhes</button>
+                <a class="btn btn-accent" href="#contato">Solicitar avaliação</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Modal -->
+        <div id="serviceModal" role="dialog" aria-modal="true" aria-hidden="true">
+          <div class="modal-content">
+            <button id="modalClose" aria-label="Fechar">✕</button>
+            <h3 id="modalTitle"></h3>
+            <p id="modalBody"></p>
+            <div class="modal-buttons">
+              <a id="modalWhats" href="#" class="btn btn-whatsapp">Agendar via WhatsApp</a>
+              <a id="modalContact" href="#contato" class="btn btn-primary">Mais informações</a>
+            </div>
+          </div>
+        </div>
+
+        <section id="experiencia" class="card">
+          <h2>Experiência Profissional</h2>
+          <p>Atuação em home care, lares de idosos e hospitais. Atendimento particular no Vale do Paraíba e São Paulo.</p>
+          <ul>
+            <li><strong>Home Care</strong> — Vita Valle, Home Angels e outras equipes</li>
+            <li><strong>Lares de Idosos</strong> — Rotina de cuidados e prevenção</li>
+            <li><strong>Hospitais</strong> — Acompanhamento e suporte</li>
+          </ul>
+        </section>
+
+        <section id="habilidades" class="card">
+          <h2>Habilidades</h2>
+          <div class="duas-colunas">
+            <ul>
+              <li>Monitoramento de sinais vitais</li>
+              <li>Administração de medicamentos</li>
+              <li>Higiene e alimentação assistida</li>
+              <li>Mobilização segura</li>
+              <li>Cuidados com feridas</li>
+            </ul>
+            <ul>
+              <li>Acompanhamento em consultas</li>
+              <li>Suporte emocional</li>
+              <li>Prevenção de quedas e escaras</li>
+              <li>Primeiros socorros</li>
+              <li>Estimulação cognitiva</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="certificacoes" class="card">
+          <h2>Formação e Certificações</h2>
+          <div class="lista-cartoes">
+            <div class="item-certificacao">
+              <strong>Ensino Médio Completo</strong><br>
+              Escola Estadual João Cursino — São José dos Campos
+            </div>
+            <div class="item-certificacao">
+              <strong>Cursando Técnico em Enfermagem</strong><br>
+              Escola de Enfermagem Tableau
+            </div>
+            <div class="item-certificacao">
+              <strong>Cuidador de Idosos</strong><br>
+              Curso completo com carga prática e teórica
+            </div>
+          </div>
+        </section>
+
+        <section id="depoimentos" class="card">
+          <h2>Depoimentos</h2>
+          <div class="lista-cartoes">
+            <figure class="depoimento">
+              <blockquote>"Carlos foi essencial no cuidado da minha mãe — profissional e atencioso."</blockquote>
+              <figcaption>— Família S., São José dos Campos</figcaption>
+            </figure>
+            <figure class="depoimento">
+              <blockquote>"Empatia e competência. Recomendo para quem busca cuidado humanizado."</blockquote>
+              <figcaption>— Cliente P., Vale do Paraíba</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 📞 SESSÃO DE CONTATO MELHORADA -->
+        <section id="contato" class="card">
+          <h2>Entre em Contato</h2>
+          <p class="subtitulo">Agende uma avaliação ou tire suas dúvidas. Respondo com agilidade, especialmente pelo WhatsApp.</p>
+
+          <div class="contato-layout">
+            <form id="contactForm" class="formulario-contato">
+              <h3>Envie uma mensagem</h3>
+
+              <div class="campo-form">
+                <label for="name">Nome completo</label>
+                <input type="text" id="name" name="name" required placeholder="Digite seu nome">
+              </div>
+
+              <div class="campo-form">
+                <label for="phone">Telefone / WhatsApp</label>
+                <input type="tel" id="phone" name="phone" required placeholder="(11) 9xxxx-xxxx">
+              </div>
+
+              <div class="campo-form">
+                <label for="message">Sua mensagem</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Descreva o que precisa..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-enviar">Enviar mensagem</button>
+              <p id="formMsg" class="mensagem-retorno"></p>
+            </form>
+
+            <aside class="info-contato">
+              <h3>Contato rápido</h3>
+
+              <div class="item-contato">
+                <strong>📞 WhatsApp</strong>
+                <a href="https://wa.me/5511962075048" target="_blank">(11) 96207-5048</a>
+              </div>
+
+              <div class="item-contato">
+                <strong>✉️ E-mail</strong>
+                <a href="mailto:calderaro1992@gmail.com">calderaro1992@gmail.com</a>
+              </div>
+
+              <div class="item-contato">
+                <strong>📍 Região de atendimento</strong>
+                <p>Vale do Paraíba e São Paulo<br>Atendimento domiciliar e hospitalar</p>
+              </div>
+
+              <div class="item-contato">
+                <strong>🏠 Endereço</strong>
+                <p>Av. Engenheiro Francisco José Longo, 782<br>Jardim São Dimas — São José dos Campos<br>CEP 12245-001</p>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-content">
+      <div>
+        <h3>Sobre</h3>
+        <p>Cuidador Geriátrico com mais de 15 anos de experiência, atendimento humanizado e especializado.</p>
+      </div>
+      <div>
+        <h3>Serviços</h3>
+        <ul>
+          <li>Acompanhamento Hospitalar</li>
+          <li>Cuidados Domiciliares</li>
+          <li>Cuidados Paliativos</li>
+          <li>Estimulação Cognitiva</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p>📞 <a href="https://wa.me/5511962075048">(11) 96207-5048</a></p>
+        <p>✉️ <a href="mailto:calderaro1992@gmail.com">calderaro1992@gmail.com</a></p>
+      </div>
+      <div>
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap rodape-final">
+      <p>© 2026 Carlos Calderaro — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
