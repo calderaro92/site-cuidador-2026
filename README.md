@@ -40,7 +40,7 @@ Um navegador web moderno (Chrome, Firefox, Safari, Edge).
 
 Navegação
 
-Acesse o Site: Abra o seu navegador e digite o endereço do meu site (ex: www.carloscaldarero-cuidador.com.br).
+Acesse o Site: Abra o seu navegador e digite o endereço do meu site https://cuidadorcarlos.netlify.app/
 Explore as Seções: Use o menu de navegação no topo da página para acessar diferentes áreas do site:
     Home: Página inicial com uma breve apresentação.
     Sobre: Conheça a minha história e valores.
