@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
-
-  // Validação e envio do formulário
+  
+ // Validação e envio do formulário
   const form = document.getElementById('contactForm');
   const msg = document.getElementById('formMsg');
 
@@ -85,9 +85,22 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
+    // Monta a mensagem formatada
+    const texto = `*Nova mensagem do site*%0A%0A` +
+                  `*Nome:* ${nome}%0A` +
+                  `*Telefone:* ${tel}%0A` +
+                  `*Mensagem:* ${mensagem}`;
+
+    // Número do seu WhatsApp
+    const numero = '5511962075048';
+
+    // Abre o WhatsApp em segundo plano
+    window.open(`https://wa.me/${numero}?text=${texto}`, '_blank');
+
+    // Mensagem que aparece para o usuário
     showMsg('✅ Mensagem enviada com sucesso! Responderei em breve.', true);
     form.reset();
-  });
+});
 
   function showMsg(texto, sucesso) {
     msg.textContent = texto;
@@ -118,3 +131,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(btn);
   }
 });
+
+function mostrarAviso(event) {
+  event.preventDefault(); // Impede que saia da página
+  alert("Página em construção! Em breve estará disponível.");
+}
