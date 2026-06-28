@@ -341,6 +341,23 @@ ul li {
   color: #b00020;
   display: block;
 }
+/* Redes Sociais */
+.redes-sociais {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.redes-sociais a {
+  color: var(--primary);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.redes-sociais a:hover {
+  color: var(--primary-dark);
+  transform: scale(1.1);
+}
+
 
 /* --------------------------
 Modal
